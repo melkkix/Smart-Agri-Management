@@ -1,0 +1,212 @@
+.finance-page {
+    min-height: 100vh;
+    padding: 35px;
+    background: #f5f8f5;
+}
+
+.finance-header {
+    margin-bottom: 25px;
+}
+
+.finance-header h1 {
+    color: #176b2c;
+    margin-bottom: 8px;
+}
+
+.finance-header p {
+    color: #666;
+}
+
+.finance-farm-card {
+    max-width: 950px;
+    background: white;
+    padding: 22px 25px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.farm-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    background: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.finance-farm-card p {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.finance-farm-card h2 {
+    margin: 0 0 5px;
+    color: #176b2c;
+}
+
+.finance-farm-card span {
+    color: #666;
+}
+
+.finance-summary {
+    max-width: 950px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.finance-summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.finance-summary-card span {
+    color: #777;
+    font-size: 14px;
+}
+
+.finance-summary-card h2 {
+    margin: 10px 0 0;
+    color: #176b2c;
+    font-size: 20px;
+}
+
+.finance-summary-card.expense h2 {
+    color: #c62828;
+}
+
+.finance-summary-card.income h2 {
+    color: #2e7d32;
+}
+
+.finance-summary-card.profit h2 {
+    color: #1565c0;
+}
+
+.expense-card {
+    max-width: 950px;
+    margin-top: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.expense-card h2 {
+    color: #176b2c;
+    margin-top: 0;
+}
+
+.expense-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.expense-row span {
+    color: #666;
+}
+
+.expense-row strong {
+    color: #333;
+}
+
+.expense-total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    font-size: 18px;
+}
+
+.expense-total strong {
+    color: #c62828;
+}
+
+.finance-profit-card {
+    max-width: 950px;
+    margin-top: 25px;
+    padding: 25px 30px;
+    border-radius: 18px;
+    background: #e8f5e9;
+    border-left: 6px solid #2e7d32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.finance-profit-card p {
+    margin: 0;
+    color: #666;
+}
+
+.finance-profit-card h1 {
+    margin: 8px 0 0;
+    color: #176b2c;
+    font-size: 36px;
+}
+
+.profit-icon {
+    font-size: 50px;
+}
+
+.finance-note {
+    max-width: 950px;
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: #fff8e1;
+    border-left: 5px solid #f9a825;
+    border-radius: 10px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.finance-empty {
+    max-width: 850px;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.finance-empty div {
+    font-size: 55px;
+}
+
+.finance-empty h2 {
+    color: #176b2c;
+}
+
+.finance-empty p {
+    color: #777;
+}
+
+@media (max-width: 1000px) {
+    .finance-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .finance-page {
+        padding: 20px;
+    }
+
+    .finance-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .finance-profit-card {
+        padding: 20px;
+    }
+}

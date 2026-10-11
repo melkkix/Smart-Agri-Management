@@ -1,0 +1,96 @@
+.add-farm-page{
+    min-height:100vh;
+    background:#F5F7FA;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.add-farm-card{
+    width:850px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.add-farm-card h1{
+    color:#2E7D32;
+    margin-bottom:10px;
+}
+
+.add-farm-card p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.farm-form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+}
+
+.form-group textarea{
+    resize:none;
+}
+
+.form-group textarea,
+.form-group:last-of-type{
+    grid-column:span 2;
+}
+
+.button-group{
+    grid-column:span 2;
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+}
+
+.save-btn{
+    background:#2E7D32;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.cancel-btn{
+    background:#E53935;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.save-btn:hover{
+    background:#1B5E20;
+}
+
+.cancel-btn:hover{
+    background:#C62828;
+}

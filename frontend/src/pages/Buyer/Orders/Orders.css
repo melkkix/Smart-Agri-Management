@@ -1,0 +1,306 @@
+.orders-page {
+    min-height: 100vh;
+    background: #f5f7f5;
+    padding: 35px;
+}
+
+
+/* HEADER */
+
+.orders-header {
+    margin-bottom: 30px;
+}
+
+.orders-header h1 {
+    margin: 0;
+    color: #2e7d32;
+    font-size: 30px;
+}
+
+.orders-header p {
+    color: #777;
+    margin-top: 8px;
+}
+
+
+/* ORDERS GRID */
+
+.orders-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* ORDER CARD */
+
+.order-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* HEADER */
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.order-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 21px;
+}
+
+
+/* STATUS */
+
+.order-status {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* PENDING */
+
+.order-status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+
+/* PROCESSING */
+
+.order-status.processing {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+
+/* READY */
+
+.order-status.ready {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+
+/* DELIVERED */
+
+.order-status.delivered {
+    background: #d1f2d5;
+    color: #1b5e20;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.product-info {
+    padding: 20px 0;
+}
+
+.product-info h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.product-info p {
+    color: #666;
+    margin: 9px 0;
+}
+
+
+/* PRICE */
+
+.order-price {
+    color: #2e7d32 !important;
+    font-size: 22px;
+    margin-top: 18px !important;
+}
+
+
+/* STATUS MESSAGE */
+
+.status-message {
+    padding: 12px 15px;
+    background: #f5f7f5;
+    border-radius: 8px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* TRACKING */
+
+.tracking-section {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.tracking-section h3 {
+    color: #444;
+    margin-top: 0;
+}
+
+
+/* TRACKING CONTAINER */
+
+.tracking {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+/* GREY LINE */
+
+.tracking-line {
+    position: absolute;
+    top: 15px;
+    left: 10%;
+    right: 10%;
+    height: 4px;
+    background: #ddd;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+
+/* GREEN PROGRESS */
+
+.tracking-progress {
+    height: 100%;
+    background: #2e7d32;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+
+/* STEP */
+
+.step {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #999;
+    width: 25%;
+}
+
+
+/* CIRCLE */
+
+.step span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #ddd;
+
+    color: white;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+/* ACTIVE STEP */
+
+.step.active {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+
+/* ACTIVE CIRCLE */
+
+.step.active span {
+    background: #2e7d32;
+}
+
+
+/* STEP TEXT */
+
+.step p {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+
+/* NO ORDERS */
+
+.no-orders {
+    background: white;
+    padding: 50px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.no-orders h2 {
+    color: #2e7d32;
+}
+
+.no-orders p {
+    color: #777;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .orders-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .orders-page {
+        padding: 20px;
+    }
+
+
+    .order-card {
+        padding: 18px;
+    }
+
+
+    .tracking {
+        gap: 3px;
+    }
+
+
+    .step p {
+        font-size: 10px;
+    }
+
+
+    .step span {
+        width: 27px;
+        height: 27px;
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,106 @@
+.dashboard-layout{
+    display:flex;
+}
+
+.dashboard-content{
+    margin-left:270px;
+    width:calc(100% - 270px);
+    min-height:100vh;
+    background:#F5F7FA;
+    padding:30px;
+}
+
+.farm-management{
+    margin-top:30px;
+}
+
+.farm-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.farm-header h1{
+    color:#2E7D32;
+    margin-bottom:8px;
+}
+
+.farm-header p{
+    color:#666;
+}
+
+.add-farm-btn{
+    background:#2E7D32;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.add-farm-btn:hover{
+    background:#1B5E20;
+}
+
+.farm-table{
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#2E7D32;
+    color:#fff;
+    padding:15px;
+    text-align:left;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #EEEEEE;
+}
+
+.active{
+    background:#E8F5E9;
+    color:#2E7D32;
+    padding:6px 14px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.edit-btn{
+    background:#FB8C00;
+    color:#fff;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+.delete-btn{
+    background:#E53935;
+    color:#fff;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.edit-btn:hover{
+    background:#EF6C00;
+}
+
+.delete-btn:hover{
+    background:#C62828;
+}

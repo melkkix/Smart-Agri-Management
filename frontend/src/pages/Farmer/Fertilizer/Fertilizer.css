@@ -1,0 +1,213 @@
+.fertilizer-page {
+    min-height: 100vh;
+    padding: 35px;
+    background: #f5f8f5;
+}
+
+.fertilizer-header {
+    margin-bottom: 25px;
+}
+
+.fertilizer-header h1 {
+    color: #176b2c;
+    margin-bottom: 8px;
+}
+
+.fertilizer-header p {
+    color: #666;
+}
+
+
+/* Farm */
+
+.fertilizer-farm-card {
+    max-width: 900px;
+    background: white;
+    padding: 22px 25px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.farm-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    background: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.fertilizer-farm-card p {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.fertilizer-farm-card h2 {
+    margin: 0 0 5px;
+    color: #176b2c;
+}
+
+.fertilizer-farm-card span {
+    color: #666;
+}
+
+
+/* Cards */
+
+.fertilizer-grid {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.fertilizer-card {
+    background: white;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.fertilizer-card h3 {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.fertilizer-card h2 {
+    color: #176b2c;
+    margin: 8px 0 0;
+    font-size: 20px;
+}
+
+
+/* Recommendation */
+
+.fertilizer-recommendation {
+    max-width: 900px;
+    margin-top: 25px;
+    padding: 28px;
+    border-radius: 16px;
+    background: #e8f5e9;
+    border-left: 6px solid #2e7d32;
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.recommendation-icon {
+    font-size: 45px;
+}
+
+.fertilizer-recommendation p:first-child {
+    margin: 0 0 5px;
+    color: #666;
+}
+
+.fertilizer-recommendation h1 {
+    margin: 0 0 8px;
+    color: #176b2c;
+}
+
+.fertilizer-recommendation h3 {
+    margin: 0 0 12px;
+    color: #444;
+}
+
+.fertilizer-recommendation p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.fertilizer-advice {
+    margin-top: 15px;
+    padding: 14px;
+    background: white;
+    border-radius: 10px;
+    color: #555;
+}
+
+
+/* Important Note */
+
+.fertilizer-note {
+    max-width: 900px;
+    margin-top: 20px;
+    padding: 18px 22px;
+    background: #fff8e1;
+    border-left: 5px solid #f9a825;
+    border-radius: 10px;
+}
+
+.fertilizer-note h3 {
+    margin: 0 0 8px;
+    color: #9a6800;
+}
+
+.fertilizer-note p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* Empty */
+
+.fertilizer-empty {
+    max-width: 850px;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.fertilizer-empty div {
+    font-size: 55px;
+}
+
+.fertilizer-empty h2 {
+    color: #176b2c;
+}
+
+.fertilizer-empty p {
+    color: #777;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .fertilizer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fertilizer-page {
+        padding: 20px;
+    }
+
+    .fertilizer-recommendation {
+        flex-direction: column;
+    }
+
+}

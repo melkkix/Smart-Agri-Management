@@ -1,0 +1,112 @@
+.crop-page {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7f5;
+}
+
+.dashboard-content {
+    flex: 1;
+}
+
+.crop-management {
+    padding: 30px;
+}
+
+.crop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.crop-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.crop-header p {
+    margin-top: 8px;
+    color: #777;
+}
+
+.add-crop-btn {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.add-crop-btn:hover {
+    background: #256628;
+}
+
+.crop-table {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.crop-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crop-table th,
+.crop-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.crop-table th {
+    background: #2e7d32;
+    color: white;
+    font-weight: 600;
+}
+
+.crop-table td {
+    color: #555;
+}
+
+.active {
+    background: #dff5e1;
+    color: #2e7d32;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.crop-table th:first-child {
+    border-top-left-radius: 6px;
+}
+
+.crop-table th:last-child {
+    border-top-right-radius: 6px;
+}
+.active {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    background: #e0f2e1;
+    color: #2e7d32;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sold {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    background: #ffebee;
+    color: #c62828;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.zero-stock {
+    color: #c62828;
+}

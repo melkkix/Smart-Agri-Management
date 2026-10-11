@@ -1,0 +1,88 @@
+.admin-buyers-page {
+    padding: 30px;
+    background: #f5f8f5;
+    min-height: 100vh;
+}
+
+.admin-buyers-page h1 {
+    color: #176b2c;
+    margin-bottom: 8px;
+}
+
+.admin-buyers-page > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+.buyers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.buyer-card {
+    background: white;
+    padding: 22px;
+    border-radius: 16px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.buyer-icon {
+    width: 60px;
+    height: 60px;
+    background: #e3f2fd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+
+.buyer-info h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+
+.buyer-info p {
+    margin: 6px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+
+.buyer-role {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #e3f2fd;
+    color: #1565c0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 1000px) {
+
+    .buyers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .buyers-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

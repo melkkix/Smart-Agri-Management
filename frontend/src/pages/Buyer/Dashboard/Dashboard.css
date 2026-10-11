@@ -1,0 +1,218 @@
+.buyer-dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f8f5;
+}
+
+
+.buyer-dashboard-content {
+    margin-left: 270px;
+    width: calc(100% - 270px);
+    min-height: 100vh;
+}
+
+
+.buyer-dashboard {
+    min-height: 100vh;
+    padding: 35px;
+}
+
+
+/* Header */
+
+.buyer-header {
+    margin-bottom: 30px;
+}
+
+.buyer-header h1 {
+    color: #176b2c;
+    margin-bottom: 8px;
+}
+
+.buyer-header p {
+    color: #666;
+}
+
+
+/* Summary Cards */
+
+.buyer-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
+.buyer-card {
+    background: white;
+    border-radius: 16px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.buyer-card-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    background: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+
+.buyer-card h3 {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+}
+
+
+.buyer-card h2 {
+    margin: 5px 0;
+    color: #176b2c;
+    font-size: 27px;
+}
+
+
+.buyer-card p {
+    margin: 0;
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* Quick Actions */
+
+.buyer-actions {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.buyer-actions h2 {
+    color: #176b2c;
+    margin-top: 0;
+}
+
+
+.buyer-action-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.buyer-action-grid button {
+    border: none;
+    background: #176b2c;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.buyer-action-grid button:hover {
+    opacity: 0.9;
+}
+
+
+/* Notifications */
+
+.buyer-notification-panel {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.buyer-notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.buyer-notification-header h2 {
+    color: #176b2c;
+}
+
+
+.buyer-notification-header button {
+    border: none;
+    background: #176b2c;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+.buyer-notification {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #eee;
+}
+
+
+.buyer-notification span {
+    font-size: 22px;
+}
+
+
+.buyer-notification p {
+    margin: 0;
+    color: #555;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+    .buyer-summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .buyer-dashboard-content {
+        margin-left: 220px;
+        width: calc(100% - 220px);
+    }
+
+    .buyer-dashboard {
+        padding: 20px;
+    }
+
+    .buyer-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .buyer-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

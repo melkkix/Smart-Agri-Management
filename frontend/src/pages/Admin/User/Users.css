@@ -1,0 +1,64 @@
+.admin-users-page {
+    padding: 30px;
+}
+
+.admin-users-page h1 {
+    color: #176b2c;
+    margin-bottom: 8px;
+}
+
+.admin-users-page > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.users-table-container {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    overflow-x: auto;
+}
+
+.users-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table-container th {
+    background: #e8f5e9;
+    color: #176b2c;
+    text-align: left;
+    padding: 15px;
+}
+
+.users-table-container td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.users-table-container tr:hover {
+    background: #f8faf8;
+}
+
+.role-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.role-badge.farmer {
+    background: #e8f5e9;
+    color: #176b2c;
+}
+
+.role-badge.buyer {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.role-badge.admin {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}

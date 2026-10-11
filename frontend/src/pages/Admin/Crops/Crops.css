@@ -1,0 +1,93 @@
+.admin-crops-page {
+    padding: 30px;
+    background: #f5f8f5;
+    min-height: 100vh;
+}
+
+.admin-crops-page h1 {
+    color: #176b2c;
+    margin-bottom: 8px;
+}
+
+.admin-crops-page > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+.crops-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.crop-card {
+    background: white;
+    padding: 22px;
+    border-radius: 16px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.crop-icon {
+    width: 60px;
+    height: 60px;
+    background: #e8f5e9;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+
+.crop-info h2 {
+    margin: 0 0 12px;
+    color: #333;
+}
+
+
+.crop-info p {
+    margin: 7px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+
+.crop-status {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #e8f5e9;
+    color: #176b2c;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 1000px) {
+
+    .crops-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-crops-page {
+        padding: 20px;
+    }
+
+    .crops-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

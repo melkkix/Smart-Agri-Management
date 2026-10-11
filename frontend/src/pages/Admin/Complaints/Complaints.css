@@ -1,0 +1,102 @@
+.admin-complaints-page {
+    padding: 30px;
+    background: #f5f8f5;
+    min-height: 100vh;
+}
+
+.admin-complaints-page h1 {
+    color: #176b2c;
+    margin-bottom: 8px;
+}
+
+.admin-complaints-page > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+.complaints-list {
+    display: grid;
+    gap: 20px;
+}
+
+
+.complaint-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.complaint-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+
+.complaint-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+
+.complaint-card p {
+    color: #666;
+    margin: 10px 0;
+}
+
+
+.complaint-status {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+
+.in-progress {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+
+.resolved {
+    background: #e8f5e9;
+    color: #176b2c;
+}
+
+
+.complaint-actions {
+    margin-top: 20px;
+}
+
+
+.complaint-actions button {
+    border: none;
+    background: #176b2c;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.complaint-actions button:hover {
+    opacity: 0.9;
+}
+
+
+.complaint-actions p {
+    color: #176b2c;
+    font-weight: 600;
+}

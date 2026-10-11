@@ -1,0 +1,209 @@
+.buyer-sidebar {
+
+    width: 270px;
+
+    min-height: 100vh;
+
+    background: #176b2c;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    position: fixed;
+
+    left: 0;
+
+    top: 0;
+
+    bottom: 0;
+
+}
+
+
+/* LOGO */
+
+.buyer-sidebar-logo {
+
+    padding: 28px 22px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+}
+
+
+.buyer-sidebar-logo h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+}
+
+
+.buyer-sidebar-logo p {
+
+    margin: 6px 0 0;
+
+    color: #d8f3dc;
+
+    font-size: 14px;
+
+}
+
+
+/* MENU */
+
+.buyer-sidebar-menu {
+
+    list-style: none;
+
+    padding: 20px 15px;
+
+    margin: 0;
+
+}
+
+
+.buyer-sidebar-menu li {
+
+    margin-bottom: 8px;
+
+}
+
+
+.buyer-sidebar-menu a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 16px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+
+}
+
+
+.buyer-sidebar-menu a:hover {
+
+    background: rgba(255, 255, 255, 0.12);
+
+}
+
+
+.buyer-sidebar-menu svg {
+
+    font-size: 18px;
+
+    flex-shrink: 0;
+
+}
+
+
+/* NOTIFICATION TEXT */
+
+.buyer-notification-text {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+}
+
+
+/* NOTIFICATION BADGE */
+
+.buyer-notification-badge {
+
+    min-width: 22px;
+
+    height: 22px;
+
+    padding: 0 6px;
+
+    background: #f44336;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-left: auto;
+
+}
+
+
+/* FOOTER */
+
+.buyer-sidebar-footer {
+
+    margin-top: auto;
+
+    padding: 20px 15px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+}
+
+
+.buyer-sidebar-footer a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 16px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+}
+
+
+.buyer-sidebar-footer a:hover {
+
+    background: #2e7d32;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .buyer-sidebar {
+
+        width: 220px;
+
+    }
+
+}

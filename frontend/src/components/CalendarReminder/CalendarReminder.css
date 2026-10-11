@@ -1,0 +1,414 @@
+.calendar-reminder {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+
+.calendar-header h2 {
+    margin: 0;
+    color: #2e7d32;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.calendar-header h2 svg {
+    font-size: 22px;
+}
+
+
+.calendar-header p {
+    margin: 6px 0 0;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TODAY BUTTON
+========================================= */
+
+.today-btn {
+    border: none;
+    background: #2e7d32;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.today-btn:hover {
+    background: #256b29;
+}
+
+
+/* =========================================
+   MONTH NAVIGATION
+========================================= */
+
+.calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+
+.calendar-navigation h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+
+.month-btn {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    background: #e8f5e9;
+    color: #2e7d32;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.month-btn:hover {
+    background: #c8e6c9;
+}
+
+
+/* =========================================
+   WEEK DAYS
+========================================= */
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+
+.calendar-weekdays div {
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    color: #777;
+    padding: 8px 0;
+}
+
+
+/* =========================================
+   CALENDAR GRID
+========================================= */
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+
+/* =========================================
+   CALENDAR DAY
+========================================= */
+
+.calendar-day {
+    position: relative;
+
+    width: 100%;
+    height: 45px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+
+.calendar-day:hover {
+    background: #e8f5e9;
+}
+
+
+/* =========================================
+   TODAY
+========================================= */
+
+.calendar-day.today {
+    background: #2e7d32;
+    color: white;
+    font-weight: 700;
+}
+
+
+.calendar-day.today:hover {
+    background: #256b29;
+}
+
+
+/* =========================================
+   SELECTED DATE
+========================================= */
+
+.calendar-day.selected {
+    outline: 2px solid #2e7d32;
+    outline-offset: -2px;
+}
+
+
+.calendar-day.today.selected {
+    outline: 3px solid #81c784;
+}
+
+
+/* =========================================
+   EMPTY DAYS
+========================================= */
+
+.calendar-day.empty {
+    cursor: default;
+}
+
+
+.calendar-day.empty:hover {
+    background: transparent;
+}
+
+
+/* =========================================
+   REMINDER INDICATOR
+========================================= */
+
+.calendar-day.has-reminder small {
+    position: absolute;
+
+    bottom: 4px;
+    right: 5px;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #fb8c00;
+    color: white;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================
+   SELECTED DATE
+========================================= */
+
+.selected-date {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: #f5f7fa;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.selected-date > svg {
+    color: #2e7d32;
+    font-size: 22px;
+}
+
+
+.selected-date span {
+    display: block;
+
+    font-size: 12px;
+
+    color: #777;
+
+    margin-bottom: 4px;
+}
+
+
+.selected-date strong {
+    display: block;
+
+    color: #333;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   REMINDERS SECTION
+========================================= */
+
+.calendar-reminders {
+    margin-top: 22px;
+
+    border-top: 1px solid #eeeeee;
+
+    padding-top: 18px;
+}
+
+
+.calendar-reminders h3 {
+    margin: 0 0 12px;
+
+    color: #2e7d32;
+
+    font-size: 17px;
+}
+
+
+.no-calendar-reminder {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   REMINDER ITEM
+========================================= */
+
+.calendar-reminder-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px;
+
+    margin-bottom: 8px;
+
+    background: #f5f7fa;
+
+    border-radius: 10px;
+}
+
+
+.calendar-reminder-dot {
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #e8f5e9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.calendar-reminder-item strong {
+    color: #333;
+
+    font-size: 14px;
+}
+
+
+.calendar-reminder-item p {
+    margin: 3px 0 0;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .calendar-reminder {
+        padding: 20px;
+    }
+
+
+    .calendar-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+
+    .calendar-header h2 {
+        font-size: 20px;
+    }
+
+
+    .calendar-header p {
+        font-size: 12px;
+    }
+
+
+    .calendar-weekdays {
+        gap: 3px;
+    }
+
+
+    .calendar-grid {
+        gap: 3px;
+    }
+
+
+    .calendar-day {
+        height: 38px;
+    }
+
+}

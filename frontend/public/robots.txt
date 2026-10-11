@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /farmer/
+Disallow: /buyer/
+
+Sitemap: https://smartagri.com/sitemap.xml

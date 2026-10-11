@@ -1,0 +1,220 @@
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* =========================================
+   DASHBOARD CONTENT
+========================================= */
+
+.dashboard-content {
+    margin-left: 270px;
+    width: calc(100% - 270px);
+    min-height: 100vh;
+
+    background: #F5F7FA;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   DASHBOARD GRID
+========================================= */
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 2fr)
+        minmax(280px, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   ORDER SUMMARY
+========================================= */
+
+.dashboard-order-card {
+    background: white;
+
+    padding: 20px 25px;
+
+    margin: 25px 0;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+.order-card-icon {
+    width: 55px;
+    height: 55px;
+
+    min-width: 55px;
+
+    border-radius: 12px;
+
+    background: #e8f5e9;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+}
+
+
+.dashboard-order-card h3 {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+.dashboard-order-card h2 {
+    margin: 5px 0;
+
+    color: #2e7d32;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+
+.dashboard-order-card p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .dashboard-content {
+        padding: 25px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .dashboard-content {
+        margin-left: 0;
+
+        width: 100%;
+
+        padding: 20px 15px;
+    }
+
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        margin-top: 20px;
+    }
+
+
+    .dashboard-order-card {
+        padding: 18px;
+
+        margin: 20px 0;
+    }
+
+
+    .order-card-icon {
+        width: 48px;
+        height: 48px;
+
+        min-width: 48px;
+
+        font-size: 24px;
+    }
+
+
+    .dashboard-order-card h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-content {
+        padding: 15px 10px;
+    }
+
+
+    .dashboard-order-card {
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+
+    .dashboard-order-card h3 {
+        font-size: 14px;
+    }
+
+
+    .dashboard-order-card h2 {
+        font-size: 22px;
+    }
+
+
+    .dashboard-order-card p {
+        font-size: 12px;
+    }
+
+}
